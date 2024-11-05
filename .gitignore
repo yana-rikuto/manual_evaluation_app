@@ -1,0 +1,13 @@
+# Python関連
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.env
+
+# CSVファイル（公開しない場合）
+ratings.csv
+
+# その他の不要なファイル
+.DS_Store

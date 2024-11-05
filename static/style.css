@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+h1 {
+    color: #333;
+}
+label {
+    margin: 10px 0;
+}
+button {
+    margin-top: 10px;
+}

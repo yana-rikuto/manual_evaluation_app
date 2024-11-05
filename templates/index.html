@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ロボットダンス評価</title>
+</head>
+<body>
+    <h1>ロボットダンスを評価してください</h1>
+    <video width="640" height="480" controls autoplay>
+        <source src="{{ url_for('static', filename='videos/' + video_file) }}" type="video/mp4">
+        お使いのブラウザは動画タグに対応していません。
+    </video>
+    <form action="/rate" method="POST">
+        <input type="hidden" name="video_file" value="{{ video_file }}">
+        <label>滑らかさ得点 (1〜100): <input type="number" name="smoothness" min="1" max="100" required></label><br>
+        <label>リズム感得点 (1〜100): <input type="number" name="rhythm" min="1" max="100" required></label><br>
+        <label>表現力得点 (1〜100): <input type="number" name="expression" min="1" max="100" required></label><br>
+        <button type="submit">評価する</button>
+    </form>
+</body>
+</html>
