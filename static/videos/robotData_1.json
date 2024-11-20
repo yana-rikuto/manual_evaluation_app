@@ -1,0 +1,50 @@
+[
+  {
+    "speed": 0.0,
+    "rotationSpeed": 108.97,
+    "action": "rotate",
+    "duration": 3.466667
+  },
+  {
+    "speed": 1.16,
+    "rotationSpeed": 0.0,
+    "action": "move forward",
+    "duration": 6.066667
+  },
+  {
+    "speed": 3.03,
+    "rotationSpeed": 0.0,
+    "action": "move forward",
+    "duration": 9.733334
+  },
+  {
+    "speed": 1.14,
+    "rotationSpeed": 0.0,
+    "action": "move forward",
+    "duration": 14.500001
+  },
+  {
+    "speed": 0.0,
+    "rotationSpeed": 148.4,
+    "action": "rotate",
+    "duration": 18.2333336
+  },
+  {
+    "speed": 3.77,
+    "rotationSpeed": 0.0,
+    "action": "move forward",
+    "duration": 22.9333344
+  },
+  {
+    "speed": 1.37,
+    "rotationSpeed": 0.0,
+    "action": "move forward",
+    "duration": 25.2666683
+  },
+  {
+    "speed": 0.0,
+    "rotationSpeed": 116.69,
+    "action": "rotate",
+    "duration": 27.833334
+  }
+]

@@ -3,19 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>ロボットダンス評価</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>ロボットダンスを評価してください</h1>
-    <video width="640" height="480" controls autoplay>
-        <source src="{{ url_for('static', filename='videos/' + video_file) }}" type="video/mp4">
-        お使いのブラウザは動画タグに対応していません。
-    </video>
-    <form action="/rate" method="POST">
-        <input type="hidden" name="video_file" value="{{ video_file }}">
-        <label>滑らかさ得点 (1〜100): <input type="number" name="smoothness" min="1" max="100" required></label><br>
-        <label>リズム感得点 (1〜100): <input type="number" name="rhythm" min="1" max="100" required></label><br>
-        <label>表現力得点 (1〜100): <input type="number" name="expression" min="1" max="100" required></label><br>
-        <button type="submit">評価する</button>
-    </form>
+    <div class="container">
+        <h1>ロボットダンスを評価してください(1~20点)</h1>
+        <p>動画ファイル名: <strong>{{ video_file }}</strong></p> <!-- 追加 -->
+        <video controls autoplay>
+            <source src="{{ url_for('static', filename='videos/' + video_file) }}" type="video/mp4">
+            お使いのブラウザは動画タグに対応していません。
+        </video>
+        <form action="/rate" method="POST">
+            <input type="hidden" name="video_file" value="{{ video_file }}">
+            <div class="input-group">
+                <label>滑らかさ: <input type="number" name="smoothness" min="1" max="100" required></label>
+                <label>リズム感: <input type="number" name="rhythm" min="1" max="100" required></label>
+                <label>表現力: <input type="number" name="expression" min="1" max="100" required></label>
+            </div>
+            <button type="submit">評価する</button>
+        </form>
+    </div>
 </body>
 </html>
