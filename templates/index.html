@@ -16,9 +16,9 @@
         <form action="/rate" method="POST">
             <input type="hidden" name="video_file" value="{{ video_file }}">
             <div class="input-group">
-                <label>滑らかさ: <input type="number" name="smoothness" min="1" max="100" required></label>
-                <label>リズム感: <input type="number" name="rhythm" min="1" max="100" required></label>
-                <label>表現力: <input type="number" name="expression" min="1" max="100" required></label>
+                <label>滑らかさ: <input type="number" name="smoothness" min="1" max="20" required></label>
+                <label>リズム感: <input type="number" name="rhythm" min="1" max="20" required></label>
+                <label>表現力: <input type="number" name="expression" min="1" max="20" required></label>
             </div>
             <button type="submit">評価する</button>
         </form>
