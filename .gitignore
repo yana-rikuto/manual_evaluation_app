@@ -11,3 +11,5 @@ ratings.csv
 
 # その他の不要なファイル
 .DS_Store
+
+./static/videos
